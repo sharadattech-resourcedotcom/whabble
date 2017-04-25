@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Weventaddresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Weventadd1</th>
+      <th>Weventadd2</th>
+      <th>String</th>
+      <th>Weventcity</th>
+      <th>Weventstate</th>
+      <th>Weventpostal</th>
+      <th>Weventurl</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @weventaddresses.each do |weventaddress| %>
+      <tr>
+        <td><%= weventaddress.weventadd1 %></td>
+        <td><%= weventaddress.weventadd2 %></td>
+        <td><%= weventaddress.string %></td>
+        <td><%= weventaddress.weventcity %></td>
+        <td><%= weventaddress.weventstate %></td>
+        <td><%= weventaddress.weventpostal %></td>
+        <td><%= weventaddress.weventurl %></td>
+        <td><%= link_to 'Show', weventaddress %></td>
+        <td><%= link_to 'Edit', edit_weventaddress_path(weventaddress) %></td>
+        <td><%= link_to 'Destroy', weventaddress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Weventaddress', new_weventaddress_path %>

@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Businesses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Busname</th>
+      <th>Busadd1</th>
+      <th>Busadd2</th>
+      <th>Buscity</th>
+      <th>Busstate</th>
+      <th>Buspostal</th>
+      <th>String</th>
+      <th>Busphone</th>
+      <th>Buswebsite</th>
+      <th>Busphone</th>
+      <th>Busemail</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @businesses.each do |business| %>
+      <tr>
+        <td><%= business.busname %></td>
+        <td><%= business.busadd1 %></td>
+        <td><%= business.busadd2 %></td>
+        <td><%= business.buscity %></td>
+        <td><%= business.busstate %></td>
+        <td><%= business.buspostal %></td>
+        <td><%= business.string %></td>
+        <td><%= business.busphone %></td>
+        <td><%= business.buswebsite %></td>
+        <td><%= business.busphone %></td>
+        <td><%= business.busemail %></td>
+        <td><%= link_to 'Show', business %></td>
+        <td><%= link_to 'Edit', edit_business_path(business) %></td>
+        <td><%= link_to 'Destroy', business, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Business', new_business_path %>

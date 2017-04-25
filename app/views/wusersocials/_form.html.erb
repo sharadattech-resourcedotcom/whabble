@@ -1,0 +1,32 @@
+<%= form_with(model: wusersocial, local: true) do |form| %>
+  <% if wusersocial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wusersocial.errors.count, "error") %> prohibited this wusersocial from being saved:</h2>
+
+      <ul>
+      <% wusersocial.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :wuserfb %>
+    <%= form.text_field :wuserfb, id: :wusersocial_wuserfb %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusertwitter %>
+    <%= form.text_field :wusertwitter, id: :wusersocial_wusertwitter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusergp %>
+    <%= form.text_field :wusergp, id: :wusersocial_wusergp %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

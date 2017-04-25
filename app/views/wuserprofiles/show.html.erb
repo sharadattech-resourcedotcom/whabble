@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Wusername:</strong>
+  <%= @wuserprofile.wusername %>
+</p>
+
+<p>
+  <strong>Wuserfirst:</strong>
+  <%= @wuserprofile.wuserfirst %>
+</p>
+
+<p>
+  <strong>Wuserlast:</strong>
+  <%= @wuserprofile.wuserlast %>
+</p>
+
+<p>
+  <strong>Wuseremail:</strong>
+  <%= @wuserprofile.wuseremail %>
+</p>
+
+<%= link_to 'Edit', edit_wuserprofile_path(@wuserprofile) %> |
+<%= link_to 'Back', wuserprofiles_path %>

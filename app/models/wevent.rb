@@ -1,0 +1,2 @@
+class Wevent < ApplicationRecord
+end

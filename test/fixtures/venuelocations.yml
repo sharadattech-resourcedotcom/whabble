@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  venueadd1: MyString
+  venueadd2: MyString
+  venuecity: MyString
+  venuestate: MyString
+  venuepostal: MyString
+  venuecountry: MyString
+  venuelanguage: MyString
+
+two:
+  venueadd1: MyString
+  venueadd2: MyString
+  venuecity: MyString
+  venuestate: MyString
+  venuepostal: MyString
+  venuecountry: MyString
+  venuelanguage: MyString

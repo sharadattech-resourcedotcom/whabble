@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Venuelocations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Venueadd1</th>
+      <th>Venueadd2</th>
+      <th>Venuecity</th>
+      <th>Venuestate</th>
+      <th>Venuepostal</th>
+      <th>Venuecountry</th>
+      <th>Venuelanguage</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @venuelocations.each do |venuelocation| %>
+      <tr>
+        <td><%= venuelocation.venueadd1 %></td>
+        <td><%= venuelocation.venueadd2 %></td>
+        <td><%= venuelocation.venuecity %></td>
+        <td><%= venuelocation.venuestate %></td>
+        <td><%= venuelocation.venuepostal %></td>
+        <td><%= venuelocation.venuecountry %></td>
+        <td><%= venuelocation.venuelanguage %></td>
+        <td><%= link_to 'Show', venuelocation %></td>
+        <td><%= link_to 'Edit', edit_venuelocation_path(venuelocation) %></td>
+        <td><%= link_to 'Destroy', venuelocation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Venuelocation', new_venuelocation_path %>

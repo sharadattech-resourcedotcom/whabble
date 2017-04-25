@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Venuesocials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Venuefb</th>
+      <th>Venuetwitter</th>
+      <th>Venuegp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @venuesocials.each do |venuesocial| %>
+      <tr>
+        <td><%= venuesocial.venuefb %></td>
+        <td><%= venuesocial.venuetwitter %></td>
+        <td><%= venuesocial.venuegp %></td>
+        <td><%= link_to 'Show', venuesocial %></td>
+        <td><%= link_to 'Edit', edit_venuesocial_path(venuesocial) %></td>
+        <td><%= link_to 'Destroy', venuesocial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Venuesocial', new_venuesocial_path %>

@@ -1,0 +1,47 @@
+<%= form_with(model: wusercontact, local: true) do |form| %>
+  <% if wusercontact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wusercontact.errors.count, "error") %> prohibited this wusercontact from being saved:</h2>
+
+      <ul>
+      <% wusercontact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :wuseradd1 %>
+    <%= form.text_field :wuseradd1, id: :wusercontact_wuseradd1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wuseradd2 %>
+    <%= form.text_field :wuseradd2, id: :wusercontact_wuseradd2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercity %>
+    <%= form.text_field :wusercity, id: :wusercontact_wusercity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wuserstate %>
+    <%= form.text_field :wuserstate, id: :wusercontact_wuserstate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wuserpostal %>
+    <%= form.text_field :wuserpostal, id: :wusercontact_wuserpostal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wuserphone %>
+    <%= form.text_field :wuserphone, id: :wusercontact_wuserphone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

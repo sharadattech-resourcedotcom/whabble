@@ -1,0 +1,52 @@
+<%= form_with(model: weventaddress, local: true) do |form| %>
+  <% if weventaddress.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(weventaddress.errors.count, "error") %> prohibited this weventaddress from being saved:</h2>
+
+      <ul>
+      <% weventaddress.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :weventadd1 %>
+    <%= form.text_field :weventadd1, id: :weventaddress_weventadd1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventadd2 %>
+    <%= form.text_field :weventadd2, id: :weventaddress_weventadd2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :weventaddress_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventcity %>
+    <%= form.text_field :weventcity, id: :weventaddress_weventcity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventstate %>
+    <%= form.text_field :weventstate, id: :weventaddress_weventstate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventpostal %>
+    <%= form.text_field :weventpostal, id: :weventaddress_weventpostal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventurl %>
+    <%= form.text_field :weventurl, id: :weventaddress_weventurl %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

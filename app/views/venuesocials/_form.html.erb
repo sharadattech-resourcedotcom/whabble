@@ -1,0 +1,32 @@
+<%= form_with(model: venuesocial, local: true) do |form| %>
+  <% if venuesocial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(venuesocial.errors.count, "error") %> prohibited this venuesocial from being saved:</h2>
+
+      <ul>
+      <% venuesocial.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :venuefb %>
+    <%= form.text_field :venuefb, id: :venuesocial_venuefb %>
+  </div>
+
+  <div class="field">
+    <%= form.label :venuetwitter %>
+    <%= form.text_field :venuetwitter, id: :venuesocial_venuetwitter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :venuegp %>
+    <%= form.text_field :venuegp, id: :venuesocial_venuegp %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

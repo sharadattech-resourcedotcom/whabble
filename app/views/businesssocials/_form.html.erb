@@ -1,0 +1,32 @@
+<%= form_with(model: businesssocial, local: true) do |form| %>
+  <% if businesssocial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(businesssocial.errors.count, "error") %> prohibited this businesssocial from being saved:</h2>
+
+      <ul>
+      <% businesssocial.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :busfb %>
+    <%= form.text_field :busfb, id: :businesssocial_busfb %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bustwitter %>
+    <%= form.text_field :bustwitter, id: :businesssocial_bustwitter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :busgp %>
+    <%= form.text_field :busgp, id: :businesssocial_busgp %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

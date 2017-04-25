@@ -1,0 +1,62 @@
+<%= form_with(model: wuserbusiness, local: true) do |form| %>
+  <% if wuserbusiness.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wuserbusiness.errors.count, "error") %> prohibited this wuserbusiness from being saved:</h2>
+
+      <ul>
+      <% wuserbusiness.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Wuserco %>
+    <%= form.text_field :Wuserco, id: :wuserbusiness_Wuserco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercoadd1 %>
+    <%= form.text_field :wusercoadd1, id: :wuserbusiness_wusercoadd1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercoadd2 %>
+    <%= form.text_field :wusercoadd2, id: :wuserbusiness_wusercoadd2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercocity %>
+    <%= form.text_field :wusercocity, id: :wuserbusiness_wusercocity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercostate %>
+    <%= form.text_field :wusercostate, id: :wuserbusiness_wusercostate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercopostal %>
+    <%= form.text_field :wusercopostal, id: :wuserbusiness_wusercopostal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercophone %>
+    <%= form.text_field :wusercophone, id: :wuserbusiness_wusercophone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercoemail %>
+    <%= form.text_field :wusercoemail, id: :wuserbusiness_wusercoemail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wusercotitle %>
+    <%= form.text_field :wusercotitle, id: :wuserbusiness_wusercotitle %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

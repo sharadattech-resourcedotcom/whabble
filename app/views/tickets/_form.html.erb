@@ -1,0 +1,57 @@
+<%= form_with(model: ticket, local: true) do |form| %>
+  <% if ticket.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+
+      <ul>
+      <% ticket.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ticketname %>
+    <%= form.text_field :ticketname, id: :ticket_ticketname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ticketperformer %>
+    <%= form.text_field :ticketperformer, id: :ticket_ticketperformer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ticketeventdate %>
+    <%= form.datetime_select :ticketeventdate, id: :ticket_ticketeventdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ticketseatsec %>
+    <%= form.text_field :ticketseatsec, id: :ticket_ticketseatsec %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ticketseatlevel %>
+    <%= form.text_field :ticketseatlevel, id: :ticket_ticketseatlevel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ticketseatrow %>
+    <%= form.text_field :ticketseatrow, id: :ticket_ticketseatrow %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ticketseat %>
+    <%= form.text_field :ticketseat, id: :ticket_ticketseat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ticketprice %>
+    <%= form.text_field :ticketprice, id: :ticket_ticketprice %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

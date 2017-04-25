@@ -1,0 +1,2 @@
+class Wuserprofile < ApplicationRecord
+end

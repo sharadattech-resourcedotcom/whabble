@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reservationname: MyString
+  resqty: 1
+  resdate: 2017-04-24 18:25:37
+
+two:
+  reservationname: MyString
+  resqty: 1
+  resdate: 2017-04-24 18:25:37

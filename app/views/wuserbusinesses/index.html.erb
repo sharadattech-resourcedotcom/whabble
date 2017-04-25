@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wuserbusinesses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wuserco</th>
+      <th>Wusercoadd1</th>
+      <th>Wusercoadd2</th>
+      <th>Wusercocity</th>
+      <th>Wusercostate</th>
+      <th>Wusercopostal</th>
+      <th>Wusercophone</th>
+      <th>Wusercoemail</th>
+      <th>Wusercotitle</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wuserbusinesses.each do |wuserbusiness| %>
+      <tr>
+        <td><%= wuserbusiness.Wuserco %></td>
+        <td><%= wuserbusiness.wusercoadd1 %></td>
+        <td><%= wuserbusiness.wusercoadd2 %></td>
+        <td><%= wuserbusiness.wusercocity %></td>
+        <td><%= wuserbusiness.wusercostate %></td>
+        <td><%= wuserbusiness.wusercopostal %></td>
+        <td><%= wuserbusiness.wusercophone %></td>
+        <td><%= wuserbusiness.wusercoemail %></td>
+        <td><%= wuserbusiness.wusercotitle %></td>
+        <td><%= link_to 'Show', wuserbusiness %></td>
+        <td><%= link_to 'Edit', edit_wuserbusiness_path(wuserbusiness) %></td>
+        <td><%= link_to 'Destroy', wuserbusiness, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wuserbusiness', new_wuserbusiness_path %>

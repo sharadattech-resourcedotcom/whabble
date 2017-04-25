@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weventadd1: MyString
+  weventadd2: MyString
+  string: MyString
+  weventcity: MyString
+  weventstate: MyString
+  weventpostal: MyString
+  weventurl: MyString
+
+two:
+  weventadd1: MyString
+  weventadd2: MyString
+  string: MyString
+  weventcity: MyString
+  weventstate: MyString
+  weventpostal: MyString
+  weventurl: MyString

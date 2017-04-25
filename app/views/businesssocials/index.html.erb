@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Businesssocials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Busfb</th>
+      <th>Bustwitter</th>
+      <th>Busgp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @businesssocials.each do |businesssocial| %>
+      <tr>
+        <td><%= businesssocial.busfb %></td>
+        <td><%= businesssocial.bustwitter %></td>
+        <td><%= businesssocial.busgp %></td>
+        <td><%= link_to 'Show', businesssocial %></td>
+        <td><%= link_to 'Edit', edit_businesssocial_path(businesssocial) %></td>
+        <td><%= link_to 'Destroy', businesssocial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Businesssocial', new_businesssocial_path %>

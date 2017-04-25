@@ -1,0 +1,2 @@
+class Weventaddress < ApplicationRecord
+end

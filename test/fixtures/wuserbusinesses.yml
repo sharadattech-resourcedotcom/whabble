@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Wuserco: MyString
+  wusercoadd1: MyString
+  wusercoadd2: MyString
+  wusercocity: MyString
+  wusercostate: MyString
+  wusercopostal: MyString
+  wusercophone: MyString
+  wusercoemail: MyString
+  wusercotitle: MyString
+
+two:
+  Wuserco: MyString
+  wusercoadd1: MyString
+  wusercoadd2: MyString
+  wusercocity: MyString
+  wusercostate: MyString
+  wusercopostal: MyString
+  wusercophone: MyString
+  wusercoemail: MyString
+  wusercotitle: MyString

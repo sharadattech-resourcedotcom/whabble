@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wuserprofiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wusername</th>
+      <th>Wuserfirst</th>
+      <th>Wuserlast</th>
+      <th>Wuseremail</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wuserprofiles.each do |wuserprofile| %>
+      <tr>
+        <td><%= wuserprofile.wusername %></td>
+        <td><%= wuserprofile.wuserfirst %></td>
+        <td><%= wuserprofile.wuserlast %></td>
+        <td><%= wuserprofile.wuseremail %></td>
+        <td><%= link_to 'Show', wuserprofile %></td>
+        <td><%= link_to 'Edit', edit_wuserprofile_path(wuserprofile) %></td>
+        <td><%= link_to 'Destroy', wuserprofile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wuserprofile', new_wuserprofile_path %>

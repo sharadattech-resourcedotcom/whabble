@@ -1,0 +1,2 @@
+class Wusercontact < ApplicationRecord
+end

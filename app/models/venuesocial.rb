@@ -1,0 +1,2 @@
+class Venuesocial < ApplicationRecord
+end

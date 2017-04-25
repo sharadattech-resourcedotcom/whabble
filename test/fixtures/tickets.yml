@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticketname: MyString
+  ticketperformer: MyString
+  ticketeventdate: 2017-04-24 18:24:16
+  ticketseatsec: MyString
+  ticketseatlevel: MyString
+  ticketseatrow: MyString
+  ticketseat: MyString
+  ticketprice: MyString
+
+two:
+  ticketname: MyString
+  ticketperformer: MyString
+  ticketeventdate: 2017-04-24 18:24:16
+  ticketseatsec: MyString
+  ticketseatlevel: MyString
+  ticketseatrow: MyString
+  ticketseat: MyString
+  ticketprice: MyString

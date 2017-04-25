@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wevents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Weventname</th>
+      <th>Weventdesc</th>
+      <th>Weventstart</th>
+      <th>Weventstop</th>
+      <th>Weventcat</th>
+      <th>Weventtype</th>
+      <th>Weventrepeat</th>
+      <th>Weventprivate</th>
+      <th>Weventbusy</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wevents.each do |wevent| %>
+      <tr>
+        <td><%= wevent.weventname %></td>
+        <td><%= wevent.weventdesc %></td>
+        <td><%= wevent.weventstart %></td>
+        <td><%= wevent.weventstop %></td>
+        <td><%= wevent.weventcat %></td>
+        <td><%= wevent.weventtype %></td>
+        <td><%= wevent.weventrepeat %></td>
+        <td><%= wevent.weventprivate %></td>
+        <td><%= wevent.weventbusy %></td>
+        <td><%= link_to 'Show', wevent %></td>
+        <td><%= link_to 'Edit', edit_wevent_path(wevent) %></td>
+        <td><%= link_to 'Destroy', wevent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wevent', new_wevent_path %>

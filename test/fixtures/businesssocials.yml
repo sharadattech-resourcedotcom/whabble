@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  busfb: MyString
+  bustwitter: MyString
+  busgp: MyString
+
+two:
+  busfb: MyString
+  bustwitter: MyString
+  busgp: MyString

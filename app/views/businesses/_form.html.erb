@@ -1,0 +1,72 @@
+<%= form_with(model: business, local: true) do |form| %>
+  <% if business.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(business.errors.count, "error") %> prohibited this business from being saved:</h2>
+
+      <ul>
+      <% business.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :busname %>
+    <%= form.text_field :busname, id: :business_busname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :busadd1 %>
+    <%= form.text_field :busadd1, id: :business_busadd1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :busadd2 %>
+    <%= form.text_field :busadd2, id: :business_busadd2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buscity %>
+    <%= form.text_field :buscity, id: :business_buscity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :busstate %>
+    <%= form.text_field :busstate, id: :business_busstate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buspostal %>
+    <%= form.text_field :buspostal, id: :business_buspostal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :string %>
+    <%= form.text_field :string, id: :business_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :busphone %>
+    <%= form.text_field :busphone, id: :business_busphone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buswebsite %>
+    <%= form.text_field :buswebsite, id: :business_buswebsite %>
+  </div>
+
+  <div class="field">
+    <%= form.label :busphone %>
+    <%= form.text_field :busphone, id: :business_busphone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :busemail %>
+    <%= form.text_field :busemail, id: :business_busemail %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

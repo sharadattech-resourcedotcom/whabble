@@ -1,0 +1,2 @@
+class Businesssocial < ApplicationRecord
+end

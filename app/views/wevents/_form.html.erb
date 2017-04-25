@@ -1,0 +1,62 @@
+<%= form_with(model: wevent, local: true) do |form| %>
+  <% if wevent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wevent.errors.count, "error") %> prohibited this wevent from being saved:</h2>
+
+      <ul>
+      <% wevent.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :weventname %>
+    <%= form.text_field :weventname, id: :wevent_weventname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventdesc %>
+    <%= form.text_field :weventdesc, id: :wevent_weventdesc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventstart %>
+    <%= form.datetime_select :weventstart, id: :wevent_weventstart %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventstop %>
+    <%= form.datetime_select :weventstop, id: :wevent_weventstop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventcat %>
+    <%= form.text_field :weventcat, id: :wevent_weventcat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventtype %>
+    <%= form.text_field :weventtype, id: :wevent_weventtype %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventrepeat %>
+    <%= form.text_field :weventrepeat, id: :wevent_weventrepeat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventprivate %>
+    <%= form.text_field :weventprivate, id: :wevent_weventprivate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weventbusy %>
+    <%= form.text_field :weventbusy, id: :wevent_weventbusy %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weventname: MyString
+  weventdesc: MyString
+  weventstart: 2017-04-24 17:58:54
+  weventstop: 2017-04-24 17:58:54
+  weventcat: MyString
+  weventtype: MyString
+  weventrepeat: 
+  weventprivate: 
+  weventbusy: 
+
+two:
+  weventname: MyString
+  weventdesc: MyString
+  weventstart: 2017-04-24 17:58:54
+  weventstop: 2017-04-24 17:58:54
+  weventcat: MyString
+  weventtype: MyString
+  weventrepeat: 
+  weventprivate: 
+  weventbusy: 

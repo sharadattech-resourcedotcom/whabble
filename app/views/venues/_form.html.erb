@@ -1,0 +1,47 @@
+<%= form_with(model: venue, local: true) do |form| %>
+  <% if venue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(venue.errors.count, "error") %> prohibited this venue from being saved:</h2>
+
+      <ul>
+      <% venue.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :venuename %>
+    <%= form.text_field :venuename, id: :venue_venuename %>
+  </div>
+
+  <div class="field">
+    <%= form.label :venuedescription %>
+    <%= form.text_field :venuedescription, id: :venue_venuedescription %>
+  </div>
+
+  <div class="field">
+    <%= form.label :venuetagline %>
+    <%= form.text_field :venuetagline, id: :venue_venuetagline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :venueurl %>
+    <%= form.text_field :venueurl, id: :venue_venueurl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :venuephone %>
+    <%= form.text_field :venuephone, id: :venue_venuephone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :venueemail %>
+    <%= form.text_field :venueemail, id: :venue_venueemail %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

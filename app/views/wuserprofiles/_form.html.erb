@@ -1,0 +1,37 @@
+<%= form_with(model: wuserprofile, local: true) do |form| %>
+  <% if wuserprofile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wuserprofile.errors.count, "error") %> prohibited this wuserprofile from being saved:</h2>
+
+      <ul>
+      <% wuserprofile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :wusername %>
+    <%= form.text_field :wusername, id: :wuserprofile_wusername %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wuserfirst %>
+    <%= form.text_field :wuserfirst, id: :wuserprofile_wuserfirst %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wuserlast %>
+    <%= form.text_field :wuserlast, id: :wuserprofile_wuserlast %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wuseremail %>
+    <%= form.text_field :wuseremail, id: :wuserprofile_wuseremail %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

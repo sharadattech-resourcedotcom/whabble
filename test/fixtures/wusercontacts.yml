@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wuseradd1: MyString
+  wuseradd2: MyString
+  wusercity: MyString
+  wuserstate: MyString
+  wuserpostal: MyString
+  wuserphone: MyString
+
+two:
+  wuseradd1: MyString
+  wuseradd2: MyString
+  wusercity: MyString
+  wuserstate: MyString
+  wuserpostal: MyString
+  wuserphone: MyString

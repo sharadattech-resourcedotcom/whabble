@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wusercontacts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wuseradd1</th>
+      <th>Wuseradd2</th>
+      <th>Wusercity</th>
+      <th>Wuserstate</th>
+      <th>Wuserpostal</th>
+      <th>Wuserphone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wusercontacts.each do |wusercontact| %>
+      <tr>
+        <td><%= wusercontact.wuseradd1 %></td>
+        <td><%= wusercontact.wuseradd2 %></td>
+        <td><%= wusercontact.wusercity %></td>
+        <td><%= wusercontact.wuserstate %></td>
+        <td><%= wusercontact.wuserpostal %></td>
+        <td><%= wusercontact.wuserphone %></td>
+        <td><%= link_to 'Show', wusercontact %></td>
+        <td><%= link_to 'Edit', edit_wusercontact_path(wusercontact) %></td>
+        <td><%= link_to 'Destroy', wusercontact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wusercontact', new_wusercontact_path %>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  busname: MyString
+  busadd1: MyString
+  busadd2: MyString
+  buscity: MyString
+  busstate: MyString
+  buspostal: MyString
+  string: MyString
+  busphone: MyString
+  buswebsite: MyString
+  busphone: MyString
+  busemail: MyString
+
+two:
+  busname: MyString
+  busadd1: MyString
+  busadd2: MyString
+  buscity: MyString
+  busstate: MyString
+  buspostal: MyString
+  string: MyString
+  busphone: MyString
+  buswebsite: MyString
+  busphone: MyString
+  busemail: MyString
