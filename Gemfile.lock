@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/rails/sass-rails.git
+  remote: git://github.com/rails/sass-rails.git
   revision: eafddf6eeecc7e8b3fb929e406cb64e401b759e3
   specs:
     sass-rails (6.0.0.beta1)
