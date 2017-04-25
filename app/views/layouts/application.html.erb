@@ -9,12 +9,16 @@
 
 </html>
 <body>
-
-<%= link_to "Events", root_path %>
-<%= link_to "Create Event",  home_createevent_path %>
-<%= link_to "Search Venues", home_createbusiness_path %>
-<%= link_to "Send Message", home_searchevents_path  %>
-<%= link_to "User Profile", home_updateprofile_path  %>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li><%= link_to "Events", root_path %></li>
+      <li><%= link_to "Create Event",  home_createevent_path %> </li>
+      <li><%= link_to "Search Venues", home_createbusiness_path %> </li>
+      <li><%= link_to "Send Message", home_searchevents_path  %> </li>
+      <li><%= link_to "User Profile", home_updateprofile_path  %> </li>
+    </ul>
+</div>
+</body>
 
     <%= yield %>
 </body>
