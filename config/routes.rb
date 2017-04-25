@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'home/welcome'
+
+  get 'home/createevent'
+
+  get 'home/searchevents'
+
+  get 'home/updateprofile'
+
+  get 'home/createvenue'
+
+  get 'home/createbusiness'
+
   resources :venuesocials
   resources :venuelocations
   resources :venues
@@ -14,5 +26,6 @@ Rails.application.routes.draw do
   resources :wusercontacts
   resources :wuserprofiles
   resources :wevents
+  root to: 'home#welcome'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
